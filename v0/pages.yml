@@ -1,0 +1,7 @@
+---
+pages:
+- Getting Started:
+    dir: GettingStarted
+    content:
+    - Installation: Installation.md
+    - Toolbox: Toolbox.md
