@@ -6,21 +6,6 @@
 
 You can list all commands with `squirrel help` and `squirrel <command> -h`
 
-```
-Usage: Squirrel <command> [options]
-
-Toolbox for swift Squirrel framework
-
-Commands:
-  serve           Run server
-  stop            Stop server
-  ps              Show running processes
-  watch           Watch for changes in directory and rerun server
-  create          Create model, controller or another file
-  help            Prints this help information
-  version         Prints the current version of this app
-```
-
 ### Run server
 
 `squirrel serve [options]`
