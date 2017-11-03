@@ -9,6 +9,7 @@ pages:
     dir: Routing
     content:
     - "Basic routing": BasicRouting.md
+    - Middlewares: Middlewares.md
 - Sessions:
     dir: Sessions
     content:
