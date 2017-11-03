@@ -6,6 +6,6 @@ pages:
     - Installation: Installation.md
     - Toolbox: Toolbox.md
 - Routing:
-  dir: Routing
-  content:
-  - "Basic routing": BasicRouting.md
+    dir: Routing
+    content:
+    - "Basic routing": BasicRouting.md
