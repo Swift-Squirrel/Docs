@@ -9,3 +9,8 @@ pages:
     dir: Routing
     content:
     - "Basic routing": BasicRouting.md
+- Sessions:
+    dir: Sessions
+    content:
+    - "Sessions": Sessions.md
+
