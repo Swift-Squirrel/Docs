@@ -13,7 +13,7 @@ pages:
 - HTTP:
     dir: HTTP
     content:
-    - Request.md
+    - "Request": Request.md
 - Sessions:
     dir: Sessions
     content:
