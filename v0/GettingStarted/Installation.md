@@ -7,7 +7,7 @@ Swift Squirrel depends just on **swift 4.0**. If you already have swift, check v
 1. Download and install swift compiler from [swift.org](https://swift.org/getting-started/#installing-swift)
 2. After installation check version with `swift --version`
 
-### Openssl
+## Openssl
 
 - Mac: Openssl is installed
 - Ubuntu: run `sudo apt-get install openssl libssl-dev` in terminal
