@@ -1,6 +1,6 @@
 ---
 pages:
-- Getting Started:
+- "Getting Started":
     dir: GettingStarted
     content:
     - Installation: Installation.md
@@ -13,9 +13,12 @@ pages:
 - HTTP:
     dir: HTTP
     content:
-    - "Request": Request.md
-- Sessions:
-    dir: Sessions
+    - Request: Request.md
+    - Response: Response.md
+    - Sessions: Sessions.md
+- Views:
+    dir: Views
     content:
-    - "Sessions": Sessions.md
+    - NutView: NutView.md
+    - Commands: Commands.md
 
