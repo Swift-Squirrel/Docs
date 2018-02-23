@@ -71,12 +71,12 @@ Example for data:
 ```swift
 let data: [String: Any] = [
     "today": Date(), 
-    "someFormat": "dd mm"
+    "someFormat": "dd MMM"
 ]
 ```
 
 ```html
-<h1>\Date(today)<\h1>
+<h1>\Date(today)</h1>
 <h2>\Date(today, format: someFormat)</h2>
 <h3>\Date(today, format: "dd mm hh")</h3>
 ```
@@ -84,7 +84,7 @@ let data: [String: Any] = [
 result: 
 
 ```html
-<h1></h1>
-<h2></h2>
-<h3></h3>
+<h1>Feb 23 2018</h1>
+<h2>23 Feb</h2>
+<h3>23 17:05</h3>
 ```
