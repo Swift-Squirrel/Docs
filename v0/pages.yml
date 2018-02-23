@@ -20,5 +20,8 @@ pages:
     dir: Views
     content:
     - NutView: NutView.md
-    - Commands: Commands.md
+    - "Page layout": PageLayout.md
+    - Expressions: Expressions.md
+    - "Control flow": ControlFlowStatements.md
+    - Head: HeadCommands.md
 
