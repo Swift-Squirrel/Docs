@@ -1,6 +1,6 @@
 # Expressions
 
-Expression commands takes argument which will be evaluated and result of expression replace theese commands in final document.
+Expression commands take argument which will be evaluated and result of expression replace theee commands in final document.
 
 ## Escaped value expression - \\(*\<expression\>*)
 
@@ -34,7 +34,7 @@ result:
 
 ## Unescaped raw value expression - \\RawValue(*\<expression\>*)
 
-Resulted value replace command as is without any escaping.
+Resulted value replaces command as is without any escaping.
 
 Example for data:
 
@@ -64,7 +64,7 @@ result:
 
 ## Date expression - \\Date(*\<expression\>*, format: *\<expression\> = default*)
 
-For dates you can use **\\Date(_:format:)** command with optional argument **format**. If format argument is missing interpreter will use default value. This value can be changed in `NutConfig.dateDefaultFormat`.
+For dates you can use **\\Date(_:format:)** command with optional argument **format**. If format argument is missing, the interpreter will use default value. This value can be changed in `NutConfig.dateDefaultFormat`.
 
 Example for data:
 

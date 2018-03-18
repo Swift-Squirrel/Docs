@@ -29,14 +29,14 @@ You can set build configuration with `-c` to `debug`(default) or `release`. For 
 
 `squirrel serve -d`
 
-If don't want to block your current terminal user `-d` argument.
+If you don't want to block your current terminal user `-d` argument.
 
 
 ### Show running servers
 
 `squirrel ps`
 
-Shows PIDs of running servers (Shows only servers started with `squirrel serve`
+Shows PIDs of running servers (shows only servers started with `squirrel serve`)
 
 ### Stop server
 
@@ -44,7 +44,7 @@ Shows PIDs of running servers (Shows only servers started with `squirrel serve`
 
 Stops running server. If `stoppingPid` and there is only one running server, this will stops it.
 
-### Watch for chnges
+### Watch for changes
 
 `squirrel watch` 
 

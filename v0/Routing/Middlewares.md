@@ -1,6 +1,6 @@
 # Middlewares
 
-Middlewares is handler which can be used to filter or modify user's `Request` before it is passed to your route handler.
+Middleware is a handler which can be used to filter or modify user's `Request` before it is passed to your route handler.
 
 ## Swift Squirrel middlewares
 
@@ -16,7 +16,7 @@ SessionMiddleware()
 
 ### Page protection
 
-To sends headers in reposne which states `no-cache` which stops browser from storing pages in history. This means you should not be able to use back button in your browser if your page is protected with this middleware.
+To send headers in response with `no-cache` header which stops browser from storing pages in history. This means you should not be able to use back button in your browser if your page is protected with this middleware.
 
 ```swift
 ProtectedPageMiddleware()
@@ -33,7 +33,7 @@ public protocol Middleware {
 }
 ```
 
-For example if you have API and you want to put your api version to header of all responses your code may be simmiliar to this:
+For example if you have API and you want to put your API version to header of all responses your code may be similar to this:
 
 ```swift
 struct APIVersionMiddleware: Middleware {

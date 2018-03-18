@@ -3,7 +3,7 @@
 NutView is simple view concept where you divide every page to smaller reusable parts. 
 
 - **View** - main content different for every page
-- **Layout** - page layout which is same on multiple pages
+- **Layout** - page layout which is the same on multiple pages
 - **Subview** - reusable parts used by multiple **Views** and **Layouts**
 
 ## Installation
@@ -24,10 +24,10 @@ import NutView
 
 NutView use two important directories. 
 
-- First (default name: "**Nuts**") contains another three subdirectories with *.nut* files (*Views*, *Layouts*, *Subviews*). In theese three directories you can add another directories or add and edit *.nut* files.
-- Second (defualt name: "**Fruits**") contains generated files from your *.nut* files. (Don't change content of this directory)
+- First (default name: "**Nuts**") contains another three subdirectories with *.nut* files (*Views*, *Layouts*, *Subviews*). In these three directories you can add another directories or add and edit *.nut* files.
+- Second (defualt name: "**Fruits**") contains generated files from your *.nut* files. (Don't change content of this directory.)
 
-You can change this directories with
+You can change these directories with
 
 ```swift
 NutConfig.nuts = "SomeDir/SomeAnotherDir1/NutsDir"
@@ -35,7 +35,7 @@ NutConfig.fruits = "SomeDir/SomeAnotherDir2/FruitDir"
 ```
 
 ## Commands
-Commands has prefix **\\** for example **\\(**_expression_**)**, **\\for**, **\\if**, **\\Title(**_..._**)**
+Commands have prefix **\\** for example **\\(**_expression_**)**, **\\for**, **\\if**, **\\Title(**_..._**)**
 
 **List of all commands**
 

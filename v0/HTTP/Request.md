@@ -1,15 +1,15 @@
 # Request
 
-Request holds all data sent from client to server.
+The request holds all data sent from client to server.
 
 ## HTTP header
 
-Request class has attribute `headers` of type `HTTPHead` which holds all headers from client. You can access them with subscript
+Request class has an attribute `headers` of type `HTTPHead` which holds all headers from the client. You can access them with subscript.
 
 ```swift
 let host = request.headers["host"]
 ```
-or typoo-safe way
+or typo-safe way
 
 ```swift
 let host = request.headers[.host]
@@ -17,7 +17,7 @@ let host = request.headers[.host]
 
 ## Parameters
 
-Swift Squirrel supports three types of parameters. First is taken from url if you specify some parts as dynamic in routing function 
+Swift Squirrel supports three types of parameters. First is taken from url if you specify some parts as dynamic in routing function .
 
 ```swift
 // for example /users/421
@@ -31,7 +31,7 @@ router.get("/users/:id") { (request: Request) in
 }
 ```
 
-Another type are query parameters taken from url query
+Another type is query parameters taken from url query.
 
 ```swift
 // for example /query?name=Tom&age=41&adult

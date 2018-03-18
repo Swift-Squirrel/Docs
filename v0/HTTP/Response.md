@@ -57,12 +57,12 @@ let response = try Respone(presentable: Person(name: "Bob", age: "43"))
 
 ## HTTP header
 
-Response class has attribute `headers` of type `HTTPHead` which holds all headers for client. You can access them with subscript
+Response class has an attribute `headers` of type `HTTPHead` which holds all headers for the client. You can access them with subscript.
 
 ```swift
 response.headers["location"] = "/foo"
 ```
-typoo-safe way
+typo-safe way
 
 ```swift
 respone.headers[.location] = "/foo"
@@ -76,7 +76,7 @@ response.headers.set(to: .location(location: "/foo"))
 
 ## Cookies
 
-Cookies are used to hold context between HTTP requests. You can set value to key and browser will store this information and send it to you with every request.
+Cookies are used to hold context between HTTP requests. You can set value to key and browser will stores this information and send it to you with every request.
 
 ```swift
 response.cookies["cartID"] = "1234567890"

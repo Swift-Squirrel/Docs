@@ -1,6 +1,6 @@
 # HTML head commands
 
-Theese commands modify content of html head tag (if exists otherwise it creates this tag).
+These commands modify content of html head tag (if exists, otherwise it creates this tag).
 
 ## Title - \\Title(*\<expression\>*)
 
@@ -32,7 +32,7 @@ result:
 
 ## Head - \\Head(*\<expression\>*)
 
-Add result of expression to html head tag. This can be useful in situation where some css or javascript is specific for one Subview or View and you don't want to include theese files in header subview
+Add result of expression to html head tag. This can be useful in situation where some css or javascript is specific for one Subview or View and you don't want to include these files in header subview
 
 example: 
 

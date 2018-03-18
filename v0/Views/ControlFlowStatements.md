@@ -4,7 +4,7 @@ Conditional commands are used to control which parts of code should be interpret
 
 ## If statement - \\if *\<BoolExpression\>* { ... \\}
 
-This command will interprete commands in **{ \\}** block only if expression is true. You can use **else** or **else if** of course
+This command will interpret commands in **{ \\}** block only if expression is true. You can use **else** or **else if** of course
 
 Example for data:
 
@@ -38,7 +38,7 @@ result:
 
 ## If let statement - \\if let *\<variable\>* = *\<expression?\>* {
 
-If let check if expression is nil or not. Commands in body will interprete only if expression is not nil which is same as in *swift*.
+If let check if expression is nil or not. Commands in body will interpret only if expression is not nil which is the same as in *swift*.
 
 Example for data:
 
@@ -68,7 +68,7 @@ result:
 
 ## If, If let combinations
 
-When you want to combine if and if let statements you can do it with comma 
+When you want to combine if and if let statements you can do it with a comma 
 
 Example for data:
 
@@ -136,5 +136,4 @@ result:
     <dt>Peter</dt>
     <dd>45</dd>
 </dl>
-TODO
 ```

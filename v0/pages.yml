@@ -1,27 +1,56 @@
 ---
-pages:
-- "Getting Started":
-    dir: GettingStarted
-    content:
-    - Installation: Installation.md
-    - Toolbox: Toolbox.md
-- Routing:
-    dir: Routing
-    content:
-    - "Basic routing": BasicRouting.md
-    - Middlewares: Middlewares.md
-- HTTP:
-    dir: HTTP
-    content:
-    - Request: Request.md
-    - Response: Response.md
-    - Sessions: Sessions.md
-- Views:
-    dir: Views
-    content:
-    - NutView: NutView.md
-    - "Page layout": PageLayout.md
-    - Expressions: Expressions.md
-    - "Control flow": ControlFlowStatements.md
-    - Head: HeadCommands.md
+sections:
+- name: Getting Started
+  directory: GettingStarted
+  pages:
+  - title: Installation
+    file: Installation
+  - title: Toolbox
+    file: Toolbox
+  - title: "Hello, World!"
+    file: HelloWorld
+  - title: Configuration
+    file: Config
 
+- name: Routing
+  directory: Routing
+  pages:
+  - title: Dynamic routing
+    file: DynamicRouting
+  - title: Middlewares
+    file: Middlewares
+
+- name: HTTP
+  directory: HTTP
+  pages:
+  - title: Request
+    file: Request
+  - title: Response
+    file: Response
+  - title: Sessions
+    file: Sessions
+
+- name: Views
+  directory: Views
+  pages:
+  - title: Page layout
+    file: PageLayout
+  - title: Expressions
+    file: Expressions
+  - title: Control flow
+    file: ControlFlowStatements
+  - title: Head
+    file: HeadCommands
+
+- name: MongoDB
+  directory: MongoDB
+  pages:
+  - title: Basics
+    file: Basics
+  - title: Find queries
+    file: FindQueries
+  - title: DB Cache
+    file: DBCache
+
+resources:
+- Resources
