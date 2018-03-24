@@ -10,6 +10,7 @@ server:
   domain: example.com
   serverRoot: /Path/To/Server/
   port: $PORT
+  max_pending: 50
 ```
 
 **_Note:_** You can use `$NAME` to load enviromental variables.
@@ -17,6 +18,7 @@ server:
 - `domain`: domain name used with cookies (default: 127.0.0.1)
 - `serverRoot`: path to server (default: current directory)
 - `port`: Server port (default: 8000)
+- `max_pending`: Maximum pending connections in queue
 
 ## SquirrelConfig class
 
@@ -39,6 +41,7 @@ print(squirrelConfig.port)
 - `webRoot`: Public directory visible for clients (*Public*)
 - `cache`: Directory for cache (*Storage/Caches*)
 - `port`: Server port
+- `maximumPendingConnections`: Maximum pending connections
 - `storageViews`: Storage used for NutView (*Storage/Fruits*)
 - `publicStorage`: Public storage, client can access to files in this directory with route /Storage/* (*Storage/Public*)
 - `views`: View files directory (*Resources/NutViews*)
