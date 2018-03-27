@@ -18,7 +18,7 @@ server:
 - `domain`: domain name used with cookies (default: 127.0.0.1)
 - `serverRoot`: path to server (default: current directory)
 - `port`: Server port (default: 8000)
-- `max_pending`: Maximum pending connections in queue
+- `max_pending`: Maximum pending connections in queue (default: 50)
 
 ## SquirrelConfig class
 

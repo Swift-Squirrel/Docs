@@ -52,5 +52,11 @@ sections:
   - title: DB Cache
     file: DBCache
 
+- name: Utilities
+  directory: Utilities
+  pages:
+  - title: JSON
+    file: JSON
+
 resources:
 - Resources
