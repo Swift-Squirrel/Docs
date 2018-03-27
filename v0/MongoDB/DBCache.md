@@ -1,6 +1,6 @@
 # SquirrelConnector Cache
 
-To make `SquirrelConnector` fast as possible we are using Cache. You can chenge cache setting in `SquirrelConnectorCache`.
+To make `SquirrelConnector` fast as possible we are using Cache. You can change cache setting in `SquirrelConnectorCache`.
 
 attributes and functions:
 

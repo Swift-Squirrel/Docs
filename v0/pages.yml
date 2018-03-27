@@ -41,6 +41,8 @@ sections:
     file: ControlFlowStatements
   - title: Head
     file: HeadCommands
+  - title: Cache
+    file: Cache
 
 - name: MongoDB
   directory: MongoDB
