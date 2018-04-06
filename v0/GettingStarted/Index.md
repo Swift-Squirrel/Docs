@@ -1,6 +1,6 @@
 # Swift Squirrel
 
-**Swift Squirrel** is simple open source web framework written in swift 4 aimed to help swift developers to create their custom APIs or web applications for Linux and Mac Os platform. 
+**Swift Squirrel** is a simple open source web framework written in swift 4 aimed to help swift developers to create their custom APIs or web applications for Linux and Mac Os platform. 
 
 - Open source
 - Easy to learn
@@ -11,7 +11,7 @@
 ## Sections
 
 ### Getting started
-Don't know how to [isntall **Swift Squirrel**](Installation) or want to write your [first server app](HelloWorld) with Squirrel? These pages will show you how is Squirrel easy and powerfull
+Don't know how to [install **Swift Squirrel**](Installation) or want to write your [first server app](HelloWorld) with Squirrel? These pages will show you how is Squirrel easy and powerfull
 
 ### Routing
 Want to create page or handle client's requests? In [routing](../Routing) sction you can learn how to do it. 

@@ -36,6 +36,8 @@ print(squirrelConfig.port)
 - `session`: Direcotry with sessions (*Storage/Sessions*)
 - `storage`: Storage directory (*Storage*)
 - `domain`: Domain name
+- `fileLog`: File logger configuration
+- `consoleLog`: Console log configuration
 - `logFile`: Logging file (*Storage/Logs/server.log*)
 - `serverRoot`: Server root directory (Current diretory)
 - `webRoot`: Public directory visible for clients (*Public*)

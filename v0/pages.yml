@@ -27,6 +27,8 @@ sections:
     file: Request
   - title: Response
     file: Response
+  - title: Stream
+    file: Stream
   - title: Sessions
     file: Sessions
 
