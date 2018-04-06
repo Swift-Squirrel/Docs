@@ -4,17 +4,29 @@ HTTP is stateless protocol this means HTTP provide any method to hold context an
 
 ## Session middleware
 
-You need to add `SessionMiddleware()` in route middlewares to use sessions.
+You need to add `SessionMiddleware()` in route middlewares to use sessions. You should have only one instance of SessionMiddleware().
 
 ```swift
-let router = Server(globalMiddlewares: [SessionMiddleware()])
+let sessionMiddleware = SessionMiddleware()
+let router = Server(globalMiddlewares: [sessionMiddleware])
 
 // or
-router.group(middlewares: [SessionMiddleware()]) { router in
+router.group(middlewares: [sessionMiddleware]) { router in
     ...
 }
-
 ```
+
+### Customize session middleware
+
+You can init `SessionMiddleware` with two parameters
+
+- sessionBuilder: `SessionBuilder` used to creating and removing sessions. Use default session builder if nil (default: `nil`)
+- clearAfterEvery: When given time expires clear all expired sessions. You can set this to `.never`, `.days(_)` or `.seconds(_)` (default: `.days(1)`)
+
+You can change attribute `clearAfter` to change next scheduling (scheduled clean will not be modified with this)
+
+You can clear expired session whenever you want with `clearExpiredSessions()` method.
+
 
 ## Start session
 
@@ -69,3 +81,10 @@ router.delete("/session/delete") { (request: Request) in
     return "Session removed"
 }
 ```
+
+## Session configuration
+
+You can configure session attributes in `SessionConfig` class.
+
+- `sessionName`: session cookie name (default: `"SquirrelSession"`)
+- `defaultExpiry` = session expiration in seconds (default: `604800` - one week)

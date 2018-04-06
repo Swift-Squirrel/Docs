@@ -16,7 +16,7 @@ Project root
 
 ```
 
-When you run a **Swift Squirel** app, you can access these files directly with route `127.0.0.1:8080/`,  `127.0.0.1:8080/index.html`, `127.0.0.1:8080/Images/squirrel.png`, `127.0.0.1:8080/Storage/file.txt`
+When you run a **Swift Squirel** app, you can access these files directly with route `127.0.0.1:8000/`,  `127.0.0.1:8000/index.html`, `127.0.0.1:8080/Images/squirrel.png`, `127.0.0.1:8000/Storage/file.txt`
 
 ## Custom routes
 
@@ -34,13 +34,21 @@ router.get("/") {
 First we need to construct router (the `Server` class is a router too) then we can add new routes.
 **Swift Squirrel** provides 5 http method which you can handle. 
 
-- GET (`router.get(_:handler:)`)
-- POST (`router.post(_:handler:)`)
-- PUT (`router.put(_:handler:)`)
-- DELETE (`router.delete(_:handler:)`)
-- PATCH (`router.patch(_:handler:)`)
+- GET (`router.get`)
+- POST (`router.post`)
+- PUT (`router.put`)
+- DELETE (`router.delete`)
+- PATCH (`router.patch`)
 
-All these methods has 4 overloads we take a tour over all of them. Using them is really intuitive.
+In these methods you can directly access in closure
+
+- Request data (`Request`)
+- Custom data structure created from request data (`Decodable`)
+- Session if exists (`Session`)
+- Custom data structure created from session data (`SessionDecodable`)
+- Custom data structure created from provided closure (`(Request) throws -> T`)
+
+These overloads gives you great ability to let **Swift Squirrel** check all needed parameters for you and you can work directly with parameters you need. **Swift Squirrel** provides all combinations of these parameters so you can specify only what you need.
 
 ### Response without request context
 
@@ -98,17 +106,17 @@ If you are using post method given type in closure can be constructed from value
 
 ```swift
 server.get("/user/:string") { (request: Request, user: String) in
-    return "\(user) \(request.getHeader(for .host))"
+    return "\(user) \(request.getHeader(for: .host))"
 }
 ```
 
 ## Return types
 
-Handler can return `Any`. This means if your return type is not `Response` class, **Swift Squirrel** takes theese steps to parse it to `Response`
+Handler can return `Any`. This means if your return type is not `ResponseProtocol` class, **Swift Squirrel** takes these steps to parse it to `Response`
 
 ```swift
 switch any {
-    case let response as Response:
+    case let response as ResponseProtocol:
         return response
     case let string as String:
         return try Response(html: string)

@@ -2,6 +2,11 @@
 
 You will often need to find objects matching some criteria. Sometimes whole object and sometimes you need to just some attributes from this object. `SquirrelConnector` provides elegant way to do this typo-safe.
 
+```swift
+let players: PlayerProjection = Player.find("age" > 50, sortedBy: ["score", .ascending], 
+                                            skipping: 100, limitedTo: 40)
+```
+
 ## Query
 
 When you want to find something in database you often needs to specify searching criteria. This is called query. We are using queries provided by `MongoKitten`. This allow you to create easy to understand queries. `MongoKitten` overloads few operators and this give us possibility to use these operators in standard and intuitive way.
@@ -64,4 +69,11 @@ struct NameInfoScore: Projectable {
 // returns projection of object
 let nameInfoScore: NameInfoScore? = try findOne("username" == "lllllll")
 print(nameInfoScore)
+```
+
+## Distinct
+Finds the distinct values for a specified attribute across an object and returns the results in an array.
+
+```swift
+let distinctValues: [String] = Player.distinct(on: "username", filtering: "score" < 20)
 ```

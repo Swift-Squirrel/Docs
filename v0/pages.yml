@@ -61,6 +61,8 @@ sections:
   pages:
   - title: JSON
     file: JSON
+  - title: Logging
+    file: Logging
 
 resources:
 - Resources

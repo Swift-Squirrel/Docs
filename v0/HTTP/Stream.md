@@ -24,31 +24,3 @@ server.get("/stream") {
     return streamResponse
 }
 ```
-
-## HTTP header
-
-Response class has an attribute `headers` of type `HTTPHead` which holds all headers for the client. You can access them with subscript.
-
-```swift
-response.headers["location"] = "/foo"
-```
-typo-safe way
-
-```swift
-respone.headers[.location] = "/foo"
-```
-
-or you can use `set` method
-
-```swift
-response.headers.set(to: .location(location: "/foo"))
-```
-
-## Cookies
-
-Cookies are used to hold context between HTTP requests. You can set value to key and browser will stores this information and send it to you with every request.
-
-```swift
-response.setCookies("cartID", to: "1234567890")
-response.cookies(for: "cartID")
-```
