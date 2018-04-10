@@ -75,7 +75,7 @@ router.post("/post") { (request: Request) in
 
 To get cookies sent with request use
 
-- `func getCookie(for:) -> String?`
+- `func cookie(for:) -> String?`
 - `var cookies: [String: String] { get }`
 
 ## Other informations
