@@ -1,6 +1,6 @@
 # Routing
 
-Routing handles all requests and giving them back right responses. **Swift Squirrel** provides default behaviour with serving static files from *Public* and *Storage/Public* folders. For example imagine this folder structure
+Routing handles all requests and gives back right responses. **Swift Squirrel** provides default behaviour when serving files from *Public* and *Storage/Public* folders. For example imagine this folder structure
 
 ```
 Project root
@@ -32,7 +32,7 @@ router.get("/") {
 ```
 
 First we need to construct router (the `Server` class is a router too) then we can add new routes.
-**Swift Squirrel** provides 5 http method which you can handle. 
+**Swift Squirrel** provides 5 http methods which you can handle. 
 
 - GET (`router.get`)
 - POST (`router.post`)
@@ -48,11 +48,11 @@ In these methods you can directly access in closure
 - Custom data structure created from session data (`SessionDecodable`)
 - Custom data structure created from provided closure (`(Request) throws -> T`)
 
-These overloads gives you great ability to let **Swift Squirrel** check all needed parameters for you and you can work directly with parameters you need. **Swift Squirrel** provides all combinations of these parameters so you can specify only what you need.
+These overloads give you great ability to let **Swift Squirrel** check all needed parameters for you and you can work directly with parameters you need. **Swift Squirrel** provides all combinations of these parameters so you can specify only what you need.
 
 ### Response without request context
 
-Imagine a situation when you just want to say hello to all customers who visit your site at `/hello` url. To view page content browsers use `GET` method. This means we use `.get(_:handler:)` method. First argument is url to handle and second is handler for given url and method.
+Imagine a situation when you just want to say hello to all customers who visit your site at `/hello` url. To view page content, browsers use `GET` method. This means we use `.get` method. First argument is url to handle and second is handler for given url and method.
 
 ```swift
 router.get("/hello") {
@@ -66,13 +66,13 @@ If you want to have access to user's request use closure with type `(Request) ->
 
 ```swift
 router.get("/host") { (request: Request) in
-    return request.getHeader(for: .host) ?? "Host is not set"
+    return request.headers[.host] ?? "Host is not set"
 }
 ```
 
 ### Response based on data
 
-If a request contains query parameters (parameters at the end of url starting with `?`) or you are using dynamic routing you can constructs from given parameters structure and use it in the handler.
+If a request contains query parameters (parameters at the end of url starting with `?`) or you are using dynamic routing you can construct structure/object from given parameters and use it in the handler.
 
 ```swift
 // Note expecting type has to conforms Decodable protocol

@@ -8,7 +8,7 @@ Middleware is a handler which can be used to filter or modify user's `Request` b
 
 ### Session
 
-Session middleware handle all session logic as sending cookie with session id to user and checking session for request.
+SessionMiddleware handles all session logic as sending cookie with session id to user and checks if session exists for request.
 
 ```swift
 SessionMiddleware()
@@ -16,7 +16,7 @@ SessionMiddleware()
 
 ### Page protection
 
-To send headers in response with `no-cache` header which stops browser from storing pages in history. This means you should not be able to use back button in your browser if your page is protected with this middleware.
+ProtectedPageMiddleware adds `no-cache` header to response which stops browser from storing pages in history. This means you should not be able to use back button in your browser if your page is protected with this middleware.
 
 ```swift
 ProtectedPageMiddleware()

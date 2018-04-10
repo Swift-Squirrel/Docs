@@ -150,7 +150,7 @@ Now *main.swift* contains everything to handle requests. Your code should be sim
 
 ## Run server app
 
-You can build and run your application with typing `swift run` into console or run project in Xcode by changing target to `HelloWorld` at right left next to stop button and then press play button. This can take a while if you are building app first time. It's because all downloaded dependencies needs to build too. But don't worry. Next built will be swift :D
+You can build and run your application with typing `swift run` into console or run project in Xcode by changing target to `HelloWorld` at right left next to stop button and then press play button. This can take a while if you are building app first time. It's because all downloaded dependencies needs to be built too. But don't worry. Next build will be swift.
 
 ```sh
 $ swift run

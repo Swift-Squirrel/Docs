@@ -20,13 +20,13 @@ Want to create page or handle client's requests? In [routing](../Routing) sction
 Are you interested what information you can get from client's [request](../HTTP/Request) and how to built [response](../HTTP/Response). Do you need [hold context](../HTTP/Sessions) variables between multiple request from client? [HTTP](../HTTP) section can give you all important information.
 
 ### Views
-Need to build HTML web page? Normally it means write a lot of duplicated code but with [NutView](../Views) you don't need to repeat yourself. It is easy to write [page layout](../Views/PageLayout) using swift like commands or add custom [title or html head](../Views/HeadCommands) element.
+Need to build HTML web page? Normally it means to write a lot of duplicated code but with [NutView](../Views) you don't need to repeat yourself. It is easy to write [page layout](../Views/PageLayout) using swift like commands or add custom [title or html head](../Views/HeadCommands) element.
 
 ### MongoDB
 - **Fact 1**: In most scenarios you will need to build your own database and work with it. 
-- **Fact 2**: With [SquirrelConnector](../MongoDB) is working with database totally painless!
+- **Fact 2**: With [SquirrelConnector](../MongoDB) working with database is totally painless!
 
 Having simple and powerfull database connector is something everyone wants to have. Our connector will let you work with database as with objects and gives you typo and type save programming!
 
 ### Utilities
-If you are interested what else you can do with **Swift Squirrel** [utilities](../Utilities) section contains everything interesting such as [JSON](../Utilities/JSON)!
+If you are interested what else you can do with **Swift Squirrel**, [utilities](../Utilities) section contains everything interesting such as [JSON](../Utilities/JSON) or [Logging](../Utilities/Logging)!

@@ -1,6 +1,15 @@
 # Dynamic routes
 
-Dynamic routes are solutions for all routes which are based on same structure but with different parts. For example if you want to see a user with nickname `Tom` probably you want to access his informations with `/users/Tom`. This means whenever you opened page with url `/users/<anyNickname>` you want to check user for existence and returns informations about him. So any part after `/users/` is dynamic which can be stated with `:` as prefix and attribute name if it is structure otherwise attribute type. In this case it would be `/users/:string`
+Dynamic routes are solutions for all routes which are based on same structure but with different parts. For example if you want to see a user with nickname `Tom` probably you want to access his informations with `/users/Tom`. This means whenever you open page with url `/users/<anyNickname>` you want to check user for existence and return informations about him. So any part after `/users/` is dynamic which can be stated with `:` as prefix and type name or attribute name. In this case it would be `/users/:string`.
+
+Supported type names:
+
+- String: `:string`
+- Bool: `:bool`
+- Int, Int8, Int16, Int32, Int64: `:int`
+- UInt, Int8, UInt16, UInt32, UInt64: `:uint`
+- Double: `:double`
+- Float: `:float`
 
 ```swift
 // We expect string value so we need to use :string
