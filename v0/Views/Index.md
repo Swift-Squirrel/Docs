@@ -24,8 +24,8 @@ import NutView
 
 NutView use two important directories. 
 
-- First (default name: "**Nuts**") contains another three subdirectories with *.nut* files (*Views*, *Layouts*, *Subviews*). In these three directories you can add another directories or add and edit *.nut* files.
-- Second (defualt name: "**Fruits**") contains generated files from your *.nut* files. (Don't change content of this directory.)
+- First (default name: "**Nuts**") contains another three subdirectories with *.nut.html* files (*Views*, *Layouts*, *Subviews*). In these three directories you can add another directories or add and edit *.nut.html* files.
+- Second (defualt name: "**Fruits**") contains generated files from your *.nut.html* files. (Don't change content of this directory.)
 
 You can change these directories with
 

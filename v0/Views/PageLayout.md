@@ -5,7 +5,7 @@ You can divide your page to multiple files and use these commands to join all fi
 ## Views
 Contains page specific content. For example if we have a blog and we want to have page with certain post our view will contain only post information and not layout, header, footer etc...
 
-*Views/Index.nut*
+*Views/Index.nut.html*
 
 ```html
 \Layout("Default")
@@ -16,7 +16,7 @@ Contains page specific content. For example if we have a blog and we want to hav
 ## Subview
 Contains reusable parts of page. For example header or footer.
 
-*Subviews/Head.nut*
+*Subviews/Head.nut.html*
 
 ```html
 <meta charset="UTF-8">
@@ -28,7 +28,7 @@ Contains reusable parts of page. For example header or footer.
 ## Layout
 This is actually our web layout. You can refer to layout from Views which pin View content to Layout at the place where `\View()` is.
 
-*Layouts/Default.nut*
+*Layouts/Default.nut.html*
 
 ```html
 <!DOCTYPE html>
