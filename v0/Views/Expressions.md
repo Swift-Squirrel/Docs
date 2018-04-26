@@ -2,7 +2,11 @@
 
 Expression commands take argument which will be evaluated and result of expression replace theee commands in final document.
 
-## Escaped value expression - \\(*\<expression\>*)
+## Escaped value expression
+
+```
+\(<expression>)
+```
 
 Result of expression is checked for special html characters (\<, \>, &, ...) and theese characters will be replaced for escaped sequences. This prevents browser to evaluate result as html tags.
 
@@ -32,7 +36,11 @@ result:
 &lt;script&gt;alert(&quot;Buy oranges!&quot;)&lt;/script&gt;
 ```
 
-## Unescaped raw value expression - \\RawValue(*\<expression\>*)
+## Unescaped raw value expression 
+
+```
+\RawValue(<expression>)
+```
 
 Resulted value replaces command as is without any escaping.
 
@@ -62,7 +70,11 @@ result:
 <script>alert("Buy oranges!")</script>
 ```
 
-## Date expression - \\Date(*\<expression\>*, format: *\<expression\> = default*)
+## Date expression 
+
+```
+\Date(<expression>, format: <expression> = default)
+```
 
 For dates you can use **\\Date(_:format:)** command with optional argument **format**. If format argument is missing, the interpreter will use default value. This value can be changed in `NutConfig.dateDefaultFormat`.
 

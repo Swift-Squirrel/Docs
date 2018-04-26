@@ -2,7 +2,11 @@
 
 Conditional commands are used to control which parts of code should be interpreted and which not. For example *if* or *for* statements.
 
-## If statement - \\if *\<BoolExpression\>* { ... \\}
+## If statement 
+
+```
+\if <BoolExpression> { ... \}
+```
 
 This command will interpret commands in **{ \\}** block only if expression is true. You can use **else** or **else if** of course
 
@@ -36,7 +40,11 @@ result:
 </h1>
 ```
 
-## If let statement - \\if let *\<variable\>* = *\<expression?\>* {
+## If let statement
+
+```
+\if let <variable> = <expression?> { ... \}
+```
 
 If let check if expression is nil or not. Commands in body will interpret only if expression is not nil which is the same as in *swift*.
 
@@ -92,7 +100,11 @@ result:
 <h1>Hello Thommas</h1>
 ```
 
-## For loop statement - \\for *\<variable\>* in *\<collection\>* {
+## For loop statement 
+
+```
+\for <variable> in <collection> { ... \}
+```
 
 You can iterate over collection of type **Array** or **Dictionary** with **\\for** command
 

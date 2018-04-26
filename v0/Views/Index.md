@@ -46,6 +46,7 @@ Commands have prefix **\\** for example **\\(**_expression_**)**, **\\for**, **\
 - __\\for__ *\<variable\>* __in__ *\<collection\>* __{__
 - __\\Title(__*\<expression\>*__)__
 - __\\Head(__*\<expression\>*__)__
+- __\\Body(__*\<expression\>*__)__
 - __\\View()__
 - __\\Subview(__*\<expression\>*__)__
 - __\\Layout(__*\<expression\>*__)__

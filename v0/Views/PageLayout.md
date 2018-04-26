@@ -5,6 +5,8 @@ You can divide your page to multiple files and use these commands to join all fi
 ## Views
 Contains page specific content. For example if we have a blog and we want to have page with certain post our view will contain only post information and not layout, header, footer etc...
 
+*__Note:__* you can always access to *View* name with `view` variable.
+
 *Views/Index.nut.html*
 
 ```html
