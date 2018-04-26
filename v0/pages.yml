@@ -41,7 +41,7 @@ sections:
     file: Expressions
   - title: Control flow
     file: ControlFlowStatements
-  - title: Head
+  - title: Head and body modifying commands
     file: HeadCommands
   - title: Cache
     file: Cache
