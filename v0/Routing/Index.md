@@ -43,7 +43,8 @@ First we need to construct router (the `Server` class is a router too) then we c
 In these methods you can directly access in closure
 
 - Request data (`Request`)
-- Custom data structure created from request data (`Decodable`)
+- Custom data structure created from request URI data (`Decodable`)
+- Custom data structure created from request body data (`BodyDecodable`)
 - Session if exists (`Session`)
 - Custom data structure created from session data (`SessionDecodable`)
 - Custom data structure created from provided closure (`(Request) throws -> T`)
